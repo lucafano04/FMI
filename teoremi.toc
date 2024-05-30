@@ -1,0 +1,33 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {part}{I\hspace {1em}Ordinamento numeri naturali e seconda forma induzione}{3}{}%
+\contentsline {section}{\numberline {1}Ordinamento dei numeri naturali}{3}{}%
+\contentsline {subparagraph}{Base Induttiva}{3}{}%
+\contentsline {subparagraph}{Passo Induttivo}{3}{}%
+\contentsline {section}{\numberline {2}Seconda forma del principio di induzione}{3}{}%
+\contentsline {subparagraph}{Base Induttiva}{3}{}%
+\contentsline {subparagraph}{Passo Induttivo}{3}{}%
+\contentsline {part}{II\hspace {1em}Teorema dell'esistenza e dell'unicità del quoziente e del resto della divisione euclidea}{4}{}%
+\contentsline {section}{\numberline {3}Unicità e esistenza del quoziente e del resto della divisione euclidea}{4}{}%
+\contentsline {part}{III\hspace {1em}Teorema di esistenza e unicità della rappresentazione in \(n\) base \(\ge 2\)}{4}{}%
+\contentsline {section}{\numberline {4}Esistenza e unicità della rappresentazione in base \(b\ge 2\)}{5}{}%
+\contentsline {part}{IV\hspace {1em}Teorema di esistenza e unicità del massimo comune divisore e del minimo comune multiplo}{6}{}%
+\contentsline {section}{\numberline {5}Massimo comune divisore}{6}{}%
+\contentsline {section}{\numberline {6}Minimo comune multiplo}{7}{}%
+\contentsline {part}{V\hspace {1em}Teorema fondamentale dell'aritmetica}{8}{}%
+\contentsline {section}{\numberline {7}Teorema di esistenza e unicità della fattorizzazione in numeri primi}{8}{}%
+\contentsline {part}{VI\hspace {1em}Teorema cinese del resto}{9}{}%
+\contentsline {section}{\numberline {8}Teorema cinese del resto}{9}{}%
+\contentsline {part}{VII\hspace {1em}Teorema di Fermat-Eulero e Crittografia RSA}{9}{}%
+\contentsline {section}{\numberline {9}Teorema di Fermat-Eulero}{9}{}%
+\contentsline {section}{\numberline {10}Teorema fondamentale della crittografia RSA}{10}{}%
+\contentsline {part}{VIII\hspace {1em}Teorema di equivalenza tra la congiungibilità con cammini e la congiungibilità con passeggiate e Teorema la relazione di congiungibilita è una relazione di equivalenza}{11}{}%
+\contentsline {section}{\numberline {11}Teorema di equivalenza tra la congiungibilità con cammini e la congiungibilità con passeggiate}{11}{}%
+\contentsline {section}{\numberline {12}La relazione di congiungibilità è una relazione di equivalenza}{11}{}%
+\contentsline {part}{IX\hspace {1em}Teorema della relazione fondamentale tra il numero dei lati e i gradi dei vertici di un grafo finito e Lemma delle strette di mano}{12}{}%
+\contentsline {section}{\numberline {13}Teorema della relazione fondamentale tra il numero dei lati e i gradi dei vertici di un grafo finito}{12}{}%
+\contentsline {section}{\numberline {14}Lemma delle strette di mano}{12}{}%
+\contentsline {part}{X\hspace {1em}Teorema caratterizzante degli alberi finiti}{13}{}%
+\contentsline {section}{\numberline {15}Teorema caratterizzante degli alberi finiti}{13}{}%
+\contentsline {part}{XI\hspace {1em}Teorema di esistenza dell'albero di copertuta per i grafi finiti}{14}{}%
+\contentsline {section}{\numberline {16}Teorema di esistenza dell'albero di copertura per i grafi finiti}{15}{}%
