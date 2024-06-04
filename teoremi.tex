@@ -7,6 +7,7 @@
 \usepackage{amssymb}
 \usepackage{cancel}
 \usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
 
 \makeatletter
 \newcommand\subsubparagraph{\@startsection{paragraph}{4}{\z@}%
@@ -61,6 +62,7 @@
 \begin{abstract}
     In questo documento sono presenti le definizioni e le dimostrazioni dei teoremi richiesti dal Prof. Ghiloni R. per l'esame del corso di Fondamenti Matematici per l'Informatica dell'anno accademico 2023/24.
 \end{abstract}
+\
 \tableofcontents
 \pagebreak
 \part[Ordinamento numeri naturali e seconda forma induzione]{L’ordinamento dei numeri naturali è un buon ordinamento e seconda forma del principio di induzione}
@@ -71,7 +73,7 @@
                 Sia \(A \subseteq \mathbb{N}\).
             \end{ipothesis}
             \begin{thesis}
-                se \(A \subseteq \mathbb{N}\) non ha un minimo allora \(A=\emptyset\), dunque \(\mathbb{N}\) è un insieme ben ordinato.
+                Se \(A \subseteq \mathbb{N}\) non ha un minimo allora \(A=\emptyset\), dunque \(\mathbb{N}\) è un insieme ben ordinato.
             \end{thesis}
             \begin{proof}
                 Definiamo con \(B\) il complementare di \(A\), (\(B:=A^C=\mathbb{N}\setminus A\)), verifichiamo l'ipotesi per induzione di prima forma su \(B\), dunque che \(\{0,1,\ldots,n\}\in B\ \forall n\in\mathbb{N}\Rightarrow A = \emptyset\).
@@ -80,9 +82,9 @@
                     Dunque \(0\notin A\) altrimenti questo ne sarebbe il minimo, dunque \(\{0\}\subseteq B\) in quanto \(B\) è definito come il complementare di \(A\).\checkmark
                 \end{base}
                 \begin{step}[$n\in B\Rightarrow n+1\in B$]
-                    Supponendo ora che \(0,1,\ldots,n\in B\), allora \(0,1,\ldots,n\notin A\), ciò implica che \(n+1\in A\) questo però lo renderebbe un minimo il che è inammisibile in quanto \(A\) non ha un minimo per ipotesi. Dunque \(n+1\in B\), e quindi \(\{0,1,\ldots,n,n+1\}\subseteq B\). Il passo induttivo è verificato.\checkmark
+                    Supponendo ora che \(0,1,\ldots,n\in B\), allora \(0,1,\ldots,n\notin A\), ciò implica che \(n+1\in A\) questo però lo renderebbe un minimo il che è inammisibile in quanto \(A\) non ha un minimo per ipotesi. Dunque \(n+1\in B\), e quindi \(\{0,1,\ldots,n,n+1\}\subseteq B\).\checkmark
                 \end{step}
-                Dunque per induzione di prima forma su \(B\) abbiamo che \(A=\emptyset\), e quindi \(\mathbb{N}\) è un insieme ben ordinato.
+                Il passo induttivo è stato fatto e dunque per induzione di prima forma su \(B\) abbiamo che \(A=\emptyset\), e quindi se \(A\neq\emptyset\) questo ammette un minimo, quindi per la definizione di insieme ben ordinato \(\mathbb{N}\) è un insieme ben ordinato.
                 \pushQED{}
             \end{proof}
             \raggedleft{\ensuremath{\blacksquare}}
@@ -98,7 +100,7 @@
                 \end{enumerate}
             \end{ipothesis}
             \begin{thesis}
-                Se le ipotesi sono verificate allora \(P(n)\) è vera \(\forall n\in\mathbb{N}\).
+                Se le ipotesi sono verificate allora \(P(n)\) è vera \(\forall n\in\N\).
             \end{thesis}
             \begin{proof}
                 Sia \(A:=\{n\in\mathbb{N}\mid P(n)\text{ è falsa}\}\), dimostriamo che \(A=\emptyset\). Supponendo che \(A\neq\emptyset\Rightarrow \exists n\in\mathbb{N}: n=\min (A)\).
@@ -113,8 +115,8 @@
             \raggedleft{\ensuremath{\blacksquare}}
         \end{theorem}
 \pagebreak
-\part{Teorema dell'esistenza e dell'unicità del quoziente e del resto della divisione euclidea}
-\section{Unicità e esistenza del quoziente e del resto della divisione euclidea}
+\part[Esistenza e unicità del quoziente e del resto nella divisione euclidea]{Teorema dell'esistenza e dell'unicità del quoziente e del resto della divisione euclidea}
+\section{Esistenza e unicità del quoziente e del resto della divisione euclidea}
 \begin{theorem}
     Il quoziente ed il resto della divisione euclidea di un numero naturale \(n\) per un numero naturale \(m\neq 0\) esistono ed sono unici.
     \begin{ipothesis}
@@ -134,8 +136,8 @@
                 \begin{list}{\leftmargin=1.5em}
                     \item{\(n<m\land n\geq 0\)} allora \(n=m\cdot 0+n\), dunque \(q=0\) e \(r=n\), e quindi \(\forall n<m\ P(n)\) è verificata.
                     \item{\(n\geq m\land m>0\)} allora poniamo \(k:=n-m\), ovvervando che \(0\leq k<n\) allora per ipotesi induttiva \(\exists q,r\in\N\) t.c. \(\left<\begin{aligned}k=m\cdot q+r\\0\leq r<(n-m)\end{aligned}\right.\), vale quindi: \(n=k+m=(qm+r)+m=(q+1)m+r\) quindi il sistema è scrivibile come: \(\begin{cases}n=m\cdot (q+1)+r\\0\leq r<m\end{cases}\), quindi il passo induttivo è stato fatto, e grazie al principio di induzione di 2° forma \(\exists\) sempre \(q,r\) della divisione eucludea di \(n\) per \(m\) con \(n,m\in\N\quad m> 0\).
-                    \item{\(n<0\land m>0\)} Grazie alla dimostrazione precedente, \(\exists q,r\in\N\) t.c. \(\begin{cases}n=-m\cdot q+r\\0\leq r<m\end{cases}\), Vale: \(-n=qm+r\Rightarrow n=-qm-r=(-q)m-r\). Se \(r=0\) \(n=(-q)m\), Supponendo che \(r>0\) ovvero \(0<r<m\Leftrightarrow 0<m-r<m\) vale: \(n=(-q)m-r=(-q)m-m+m-r=(-q-1)m+(m-r)\), quindi: \(-q-1\) è il quoziente e \(m-r\) è il resto, dunque \(\forall n<0\ P(n)\) è verificata.
-                    \item{\(m<0\)} allora \(-m>0\) dunque \(\exists q,r \in\mathbb{N}\) tali che \(n=-m\cdot q+r\) con \(0\leq r<-m\), dunque \(n=m\cdot q-r\), e quindi \(q=-q\) e \(r=-r\), e quindi \(\forall m<0\ P(n)\) è verificata.
+                    \item{\(n<0\land m>0\)} Grazie alla dimostrazione precedente, \(\exists q,r\in\N\) t.c. \(\begin{cases}-n=m\cdot q+r\\0\leq r<m\end{cases}\), Vale: \(-n=qm+r\Rightarrow n=-qm-r=(-q)m-r\). Se \(r=0\) \(n=(-q)m\), Supponendo che \(r>0\) ovvero \(0<r<m\Leftrightarrow 0<m-r<m\) vale: \(n=(-q)m-r=(-q)m-m+m-r=(-q-1)m+(m-r)\), quindi: \(-q-1\) è il quoziente e \(m-r\) è il resto, dunque \(\forall n<0\ P(n)\) è verificata.
+                    \item{\(m<0\)} allora \(-m>0\) dunque \(\exists q,r \in\mathbb{N}\) tali che \(n=-m\cdot q+r\) con \(\underline{0\leq r<}-m=\underline{|m|=|-m|}\), dunque \(n=m\cdot (-q)+r\), e quindi \(q=-q\), e quindi \(\forall m<0\ P(n)\) è verificata.
                 \end{list}
             \end{step}
             Il passo induttivo è verificato, dunque per induzione di seconda forma su \(n\) abbiamo che esistono il quoziente ed il resto della divisione euclidea di \(n\) per \(m\).
@@ -146,21 +148,21 @@
             Se \(r'>r\) a meno di riordinamento, allora vale che: \(qm-q'm=r'-r\Leftrightarrow m(q-q')=r'-r\).
             Effettuando l'operazione al modulo otteniamo: \(|m(q-q')|=|r'-r|\), dunque \(|r'-r|<m\), questo è vero se e solo se \(0\leq|q-q'|<1\),
             Questo implica che \(q=q'\) in quanto \(q,q'\in\mathbb{N}\).
-            Quindi \(mqr=mq'+r'\Rightarrow q=q'\) e \(r=r'\).
+            Quindi \(mq+r=mq'+r'\Rightarrow q=q'\) e \(r=r'\).
             Quindi il quoziente ed il resto della divisione euclidea di \(n\) per \(m\) sono unici.
         \end{uniqueness}
         \raggedleft{\pushQED{\ensuremath{\blacksquare}}}
     \end{proof}
 \end{theorem}
-\part{Teorema di esistenza e unicità della rappresentazione in \(n\) base \(\ge 2\)}
-\section{Esistenza e unicità della rappresentazione in base \(b\ge 2\)}
+\part{Teorema di esistenza e unicità della rappresentazione in base \texorpdfstring{\(b\geq 2\)}{b>=2} di \texorpdfstring{\(n\)}{n}}
+\section{Esistenza e unicità della rappresentazione in base \texorpdfstring{\(b\ge 2\)}{b>=2}}
 \begin{theorem}
     Un numero naturale \(n\) può essere sempre rappresentato in base \(b\ge 2\) in modo unico.
     \begin{ipothesis}
         Siano \(n,b\in\mathbb{N}\) con \(b\ge 2\).
     \end{ipothesis}
     \begin{thesis}
-        Esistono ed sono unici (\(\exists!\)) una rappresentazione di \(n\) in base \(b\), ovvero una successione \(\{\varepsilon_i\}\) con le seguenti proprietà:
+        Esiste una rappresentazione di \(n\) in base \(b\), ovvero una successione \(\{\varepsilon_i\}\) con le seguenti proprietà:
         \begin{enumerate}
             \item \(\varepsilon_{i\in\mathbb{N}}\) definitivamente nulla, ovvero dopo qualche \(i_0\in\mathbb{N}\Rightarrow \forall j>i_0: \varepsilon_j=0\).
             \item \(\varepsilon_i\in I_b:=\{0,1,\ldots,b-1\}\quad \forall i\in\mathbb{N}\quad (0\leq\varepsilon_i< b)\).
@@ -168,8 +170,7 @@
         \end{enumerate}
         Inoltre se esiste \(\{\varepsilon'_i\}_{i\in\mathbb{N}}\) rappresentazione di \(n\) in base \(b\) allora \(\varepsilon_i=\varepsilon'_i\quad \forall i\in\mathbb{N}\).
     \end{thesis}
-    \begin{proof}
-        %\textbf{Esistenza:} 
+    \begin{proof} 
         \begin{existence}
             Si procede per induzione di seconda forma su \(n\) partendo da \(n=0\).
             \begin{base}[$n=0$] 
@@ -180,12 +181,11 @@
                 inoltre vale che:
                 \[
                     \begin{aligned}
-                        n&=(\sum_{i\in\mathbb{N}}\delta_ib^i)b+n\Rightarrow n=\sum_{i\in\mathbb{N}}\delta_ib^{i+1}+r\quad \text{Definiamo: }\epsilon_0&=r\\
+                        n&=\left(\sum_{i\in\mathbb{N}}\delta_ib^i\right)b+n\Rightarrow n=\sum_{i\in\mathbb{N}}\delta_ib^{i+1}+r\quad \text{Definiamo: }\epsilon_0&=r\\
                         n&=\epsilon_0+\sum_{j\geq 1}\delta_{j-1}b^j=\sum_{i\in\mathbb{N}}\epsilon_ib^i
                     \end{aligned}
                 \]
             \end{step}
-        \qed
         \end{existence}
         \begin{uniqueness}
             Procediamo per induzione di seconda forma su \(n\) da \(n=0\)
@@ -209,8 +209,8 @@
         \raggedleft{\pushQED{\ensuremath{\blacksquare}}}
     \end{proof}
 \end{theorem}
-\part{Teorema di esistenza e unicità del massimo comune divisore e del minimo comune multiplo}
-\section{Massimo comune divisore}
+\part[Esistenza e unicità di MCD e MCM]{Teorema di esistenza e unicità del massimo comune divisore e del minimo comune multiplo}
+\section[Massimo comune divisore (MCD)]{Massimo comune divisore}
 \begin{theorem}
     Il massimo comune divisore tra due numeri \(n\) e \(m\) esiste ed è unico.
     \begin{ipothesis}
@@ -266,7 +266,7 @@
         \raggedleft{\pushQED{\ensuremath{\blacksquare}}}
     \end{proof}
 \end{theorem}
-\section{Minimo comune multiplo}
+\section[Minimo comune multiplo (MCM)]{Minimo comune multiplo}
 \begin{theorem}
     Il minimo comune multiplo tra due numeri \(n\) e \(m\) esiste ed è unico.
     \begin{ipothesis}
@@ -455,7 +455,7 @@
             \raggedleft{{\ensuremath{\blacksquare}}}
         \end{theorem}
 \pagebreak
-\part{Teorema di equivalenza tra la congiungibilità con cammini e la congiungibilità con passeggiate e Teorema la relazione di congiungibilita è una relazione di equivalenza}
+\part[Equivalenza tra la congiungibilità con cammini e la congiungibilità con passeggiate, dimostrazione che è relazione di equivalenza]{Teorema di equivalenza tra la congiungibilità con cammini e la congiungibilità con passeggiate e Teorema la relazione di congiungibilita è una relazione di equivalenza}
     \section{Teorema di equivalenza tra la congiungibilità con cammini e la congiungibilità con passeggiate}
         \begin{theorem}
             Due vertici di un grafo sono congiungibili per cammini se e solo se sono congiungibili per passeggiate.
@@ -507,7 +507,7 @@
             \end{proof}
             \raggedleft{{\ensuremath{\blacksquare}}}
         \end{theorem}
-\part{Teorema della relazione fondamentale tra il numero dei lati e i gradi dei vertici di un grafo finito e Lemma delle strette di mano}
+\part[Relazione fondamentale dei grafi finiti e Lemma delle strette di mano]{Teorema della relazione fondamentale tra il numero dei lati e i gradi dei vertici di un grafo finito e Lemma delle strette di mano}
     \section{Teorema della relazione fondamentale tra il numero dei lati e i gradi dei vertici di un grafo finito}
         \begin{theorem}
             \begin{ipothesis}
