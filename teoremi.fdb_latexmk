@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1717495595.71155 "c:/Users/Lucaf/Documents/FMI/teoremi.tex" "teoremi.pdf" "teoremi" 1717495598.46849 0
-  "c:/Users/Lucaf/Documents/FMI/teoremi.tex" 1717495594 47239 b4f5a14213b020483061750ea37a8b2a ""
+["pdflatex"] 1717509431.16716 "c:/Users/Lucaf/Documents/FMI/teoremi.tex" "teoremi.pdf" "teoremi" 1717509433.93688 0
+  "c:/Users/Lucaf/Documents/FMI/teoremi.tex" 1717509429 47255 ba2b29403d93462eab3c8f5b7405ab3b ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1709721146 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1709721783 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1709721511 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -105,10 +105,10 @@
   "c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1709726772 5513072 c253eaa6343e824d2661325481d57b70 ""
   "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1709726888 8221391 bc71bad27b436a0a3fdb920f68e8cb3e ""
   "c:/texlive/2023/texmf.cnf" 1709726749 713 e69b156964470283e0530f5060668171 ""
-  "teoremi.aux" 1717495598 4324 5b1104c7708220c180253d1a1b7c72a3 "pdflatex"
-  "teoremi.out" 1717495598 9242 5415c46adcb09085dedd8b33140010cd "pdflatex"
-  "teoremi.tex" 1717495594 47239 b4f5a14213b020483061750ea37a8b2a ""
-  "teoremi.toc" 1717495598 3001 99024cf350612326184913c13110ad50 "pdflatex"
+  "teoremi.aux" 1717509433 4324 5b1104c7708220c180253d1a1b7c72a3 "pdflatex"
+  "teoremi.out" 1717509433 9242 5415c46adcb09085dedd8b33140010cd "pdflatex"
+  "teoremi.tex" 1717509429 47255 ba2b29403d93462eab3c8f5b7405ab3b ""
+  "teoremi.toc" 1717509433 3001 99024cf350612326184913c13110ad50 "pdflatex"
   (generated)
   "teoremi.aux"
   "teoremi.log"
