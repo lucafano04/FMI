@@ -387,12 +387,45 @@
     \end{ipothesis}
     \begin{thesis}
         Il sistema ha soluzione se e solo se \((n,m)|b-a\), inoltre se \(c\) è una soluzione allora gli elementi di \([c]_{[n,m]}\) sono tutte e sole le soluzioni del sistema (le soluzioni in \(\mathbb{Z}\) sono: \( c+k[n,m]\in\Z\quad k\in\Z \)).
+        Definiendo \(S:=\{x\in\mathbb{Z}\mid x\equiv a\mod n\land x\equiv b\mod m\}\) allora \(S\neq\emptyset\) se e solo se \((n,m)|b-a\).
     \end{thesis}
     \begin{proof}
-        Sia \(c\) una soluzione allora esistono \(h,k\in\Z\) tali che \(c=a+hn=b+km\) in quanto \(x\equiv a\mod n\) e \(x\equiv b\mod m\Rightarrow [x]_n=[a]_n\Rightarrow x=a+kn\), e \(x=b+km\), dunque \(a+kn=b+km\Rightarrow a-b=kn-km\Rightarrow a-b=k(n-m)\Rightarrow (n,m)|a-b\).
-        Da prima possiamo dire che \(a-b = hn+km\) e che quindi \(a-hm=b+kn=c\). Si noti come \(c\) risolvi entrambe le equazioni.
-        Sia ora \(S:=\{x\in\Z \mid x\text{ risolve il sistema}\}\) "l'insieme di tutte le soluzioni", bisogna provare che se \(c\in S\)a allora  \(S=[c]_{[n,m]}\) e inoltre cse \(c'\) è una soluzione allora \(c'\in[c]_{[n,m]}\).
-        Quindi \(c=a+hn=b+km\quad c'=a+h'n=b+k'm\), dunque \(c-c'=h-h'n=k-k'm\), e quindi \(c-c'=h-h'n=k-k'm\), dunque sottraendo \(c\) a \(c'\) si ottiene che: \(c-c' = \cancel{a}+hn-\cancel{a}h'n=(h-h')n\) e \(c-c' = \cancel{b}+km-\cancel{b}k'm=(k-k')m\), dunque \(n|c-c'\) e \(m|c-c'\). Allora \([n,m] | c-c'\), e \(c'\equiv c\mod [n,m]\), dunque \(c'\in S\).
+
+        \item{$\Rightarrow)$} Supponiamo che \(S\neq \emptyset\). Segliamo \(c\in S\), ovvero \(c\equiv a(\mod n)\) e \(c\equiv b(\mod m)\), ovvero \(\exists k,h\in\Z\ t.c. c=a+kn\ e\ c=b+hm\),
+        \[
+            a+kn=\xcancel{c=}b+hm \Leftrightarrow a-b=-kn+hm\\
+        \]
+        Ricordimo che \((n,m)|n\) e \((n,m)|m\), dunque \((n,m)|a-b\).
+        \item{$\Leftarrow)$} Supponiamo che \((n,m)|a-b\), ovvero \(\exists k\in\Z \ t.c. \ a-b=k(n,m)\quad (1) \), grazie all'algoritmo di euclide con sostituzione "a ritroso" \(\exists r,s \in\Z: (n,m)=rn+sm\quad (2)\), Da (1) e (2) segue che \(a-b=k(rn+sm)=(kr)n+(ks),\)
+        \[
+            \begin{aligned}
+                \Leftrightarrow a-b&=(kr)n+(ks)\\
+                \Updownarrow\\
+                c:= a-k(rn)&=b+k(sm)\\
+                \left.\begin{aligned}
+                    \Rightarrow c=a-krn &\Rightarrow c\equiv a(\mod n)\\
+                    \Rightarrow c=b+ksm &\Rightarrow c\equiv b(\mod m)\\
+                \end{aligned}\right\} &\Rightarrow c\in S
+            \end{aligned}
+        \]
+        \item{Insieme delle soluzioni $S$} Dobbiamo provare che \(S=[c]_{[n,m]}\),
+        \[
+            \begin{aligned}
+                S\subseteq [c]_{[n,m]}\\
+                \text{Sia } c'\in S.\text{ Poiché } c\in S, valgono:
+                c\equiv a(\mod n )&\Leftrightarrow c=a+kn\quad k\in\Z\\
+                c\equiv b(\mod m )&\Leftrightarrow c=b+hm\quad h\in\Z\\
+                c'\equiv a(\mod n )&\Leftrightarrow c'=a+kn\quad k\in\Z\\
+                c'\equiv b(\mod m )&\Leftrightarrow c'=b+hm\quad h\in\Z\\
+                \Updownarrow\\
+                c-c'=a-a+(k'-k)n&=b-b+(h'-h)m \Rightarrow n|c-c'\\
+                c-c'=b-b+(h'-h)m&=a-a+(k'-k)n \Rightarrow m|c-c'\\
+                \Rightarrow n|c'-c \land m|c'-c & \Rightarrow [n,m]|c'-c \Rightarrow c'\equiv c(\mod [n,m])\\
+                \Rightarrow c'\in [c]_{[n,m]} &\Rightarrow S\subseteq [c]_{[n,m]}\\
+                c'\in[c]_{[n,m]} &\Rightarrow c'=c+k[n,m]\\
+                \Rightarrow [c']_n = [c+k[n,m]]_n = [c]_n + [k[n,m]]_n &= [c]_n + [k]_n[[n,m]]_n = [c]_n + 0 = [c]_n\Rightarrow c'\in S
+            \end{aligned}
+        \]
     \pushQED{}
     \end{proof}
     \raggedleft{{\ensuremath{\blacksquare}}}
@@ -454,7 +487,6 @@
             \end{proof}
             \raggedleft{{\ensuremath{\blacksquare}}}
         \end{theorem}
-\pagebreak
 \part[Equivalenza tra la congiungibilità con cammini e la congiungibilità con passeggiate, dimostrazione che è relazione di equivalenza]{Teorema di equivalenza tra la congiungibilità con cammini e la congiungibilità con passeggiate e Teorema la relazione di congiungibilita è una relazione di equivalenza}
     \section{Teorema di equivalenza tra la congiungibilità con cammini e la congiungibilità con passeggiate}
         \begin{theorem}

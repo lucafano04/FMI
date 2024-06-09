@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.6)  4 JUN 2024 15:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.6)  9 JUN 2024 08:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -352,9 +352,9 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 pdfTeX warning (ext4): destination with the same identifier (name{lemma.6.1.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.428             \end{ipothesis}
-                                 ] [10]
-Overfull \hbox (0.80057pt too wide) in paragraph at lines 476--481
+l.438         \item \(
+                      \phi(n)=\phi(p_1^{m_1})\cdot\phi(p_2^{m_2})\cdot\ldots...] [10]
+Overfull \hbox (0.80057pt too wide) in paragraph at lines 508--513
 \OT1/cmr/m/n/10 As-su-men-do che $\OML/cmm/m/it/10 P[]$ \OT1/cmr/m/n/10 non sia un cam-mi-no da $\OML/cmm/m/it/10 u$ \OT1/cmr/m/n/10 a $\OML/cmm/m/it/10 v$\OT1/cmr/m/n/10 : $\OML/cmm/m/it/10 P[] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 v[]; [] ; v[]; v[]; v[]; [] ; v[]; v[]; v[]; [] ; v[]\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 g$\OT1/cmr/m/n/10 ,
  []
 
@@ -362,22 +362,22 @@ Overfull \hbox (0.80057pt too wide) in paragraph at lines 476--481
 pdfTeX warning (ext4): destination with the same identifier (name{lemma.9.1.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.553                 \[
-                        
+l.577                 S
+                       ia \(G=(V,E)\) un grafo finito.] [13
 pdfTeX warning (ext4): destination with the same identifier (name{lemma.9.2.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.553                 \[
-                        ] [13
+l.628                         \end{step}
+                                        
 pdfTeX warning (ext4): destination with the same identifier (name{lemma.10.1.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.601                         \end{base}
+l.628                         \end{step}
                                         ] [14] [15
 pdfTeX warning (ext4): destination with the same identifier (name{lemma.11.1.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.657 \end{document}
+l.689 \end{document}
                     ] (./teoremi.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -387,15 +387,15 @@ Package rerunfilecheck Info: File `teoremi.out' has not changed.
 (rerunfilecheck)             Checksum: 5415C46ADCB09085DEDD8B33140010CD;9242.
  ) 
 Here is how much of TeX's memory you used:
- 10704 strings out of 474116
- 164450 string characters out of 5747718
+ 10705 strings out of 474116
+ 164458 string characters out of 5747718
  1944190 words of memory out of 5000000
- 32837 multiletter control sequences out of 15000+600000
+ 32838 multiletter control sequences out of 15000+600000
  570320 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,17n,79p,839b,764s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,17n,79p,839b,791s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on teoremi.pdf (15 pages, 299500 bytes).
+Output written on teoremi.pdf (15 pages, 301616 bytes).
 PDF statistics:
  415 PDF objects out of 1000 (max. 8388607)
  350 compressed objects within 4 object streams
